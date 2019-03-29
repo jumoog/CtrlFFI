@@ -368,7 +368,7 @@ main()
 {
   if (_WIN32)
   {
-    clibPath = "msvcr100.dll";
+    clibPath = "msvcr140.dll";
   }
   else
   {
@@ -387,7 +387,7 @@ main()
 
   int timestamp = unix_time();
   DebugN("unix time()", timestamp);
-  DebugN("unix localtime()", localtime(timestamp));
+  //DebugN("unix localtime()", localtime(timestamp));
 
   if (_WIN32)
   {
@@ -397,7 +397,7 @@ main()
     DebugN("Beep()", Beep(750, 300));
     DebugN("GetLastError()", GetLastError());
   
-    DebugN("current date and time", GetSystemTime());
+    //DebugN("current date and time", GetSystemTime());
   }
   else
   {
